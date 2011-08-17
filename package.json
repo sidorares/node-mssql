@@ -1,0 +1,15 @@
+{
+    "name": "node-mssql",
+    "version": "0.0.1",
+    "description": "A node implementation to connect with MS-SQL",
+    "homepage": "http://github.com/vivina/node-mssql",
+    "author": "Sidney Lima Filho <sidney.filho@vivina.com.br>",
+    "keywords": ["driver", "microsoft", "mssql", "tds"],
+    "repository": {
+      "type": "git",
+      "url": "http://github.com/vivina/node-mssql"
+    },
+    "engines" : { "node": ">=0.5.0" },    
+    "main": "./test.js",
+    "dependencies": {   }
+}
