@@ -1,23 +1,21 @@
 ABOUT:
 
-node-tds.js
+node-mssql
 
-An exciting implementation of the TDS protocol for node.js to allow communication with sql server.
-
-REQUIREMENTS:
-
-hmmmmm.
+An exciting implementation of the TDS protocol (TDS 7.0 = MS-SQL 2005) for node.js to allow communication with Microsoft Sql Server.
 
 USAGE:
 
-var mssql = require('./mssql');
-var sqlserver = new mssql.mssql();
-sqlserver.connect({'Server':__IP__,'Port':'1433','Database':'','User Id':'','Password':''});
-var result = sqlserver.execute("SELECT * FROM wherever;");
+var connectionString = {'Server':__IP__,'Port':'1433','Database':'','User Id':'','Password':''};
+var context = new mssql.SqlConnection(connectionString, function(){
+   var result = this.Execute("SELECT * FROM [Table];");
+});
+
+
 
 LICENSE (BSD):
 
-Copyright (c) 2011, Oren Mazor 
+Copyright (c) 2011, Sidney Lima Filho 
 All rights reserved. 
 
 Redistribution and use in source and binary forms, with or without 
